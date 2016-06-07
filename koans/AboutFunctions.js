@@ -33,7 +33,19 @@ describe("About Functions", function () {
   //
   // })
   //
-  // describe('Arrow Functions', function() {
-  //
-  // })
+  describe('Arrow Functions', function() {
+
+    it('shound understand basic usage', function() {
+
+      var arrowFn = () => { 'hello world!'; };
+
+      expect(arrowFn()).toEqual(FILL_ME_IN);
+
+      var arrowFnTwo = (number) => { number * 2; }
+
+      expect(arrowFnTwo(4)).toEqual(FILL_ME_IN);
+
+    })
+
+  })
 });
