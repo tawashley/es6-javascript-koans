@@ -9,7 +9,7 @@ Test base setup is based on David Laing's [JavaScript Koans](https://github.com/
 * Setup up base test runner
 
 * Koan files
-  * `AboutDataTypes.js` - (`let`, `const`)
+  * `AboutVariableTypes.js` - (`let`, `const`)
   * `AboutStrings.js` - (new functions, templating)
   * `AboutFunctions.js` - (default params, arrow functions)
   * `AboutObjects.js` - (shorthand, computed name)
