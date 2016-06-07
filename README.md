@@ -2,6 +2,8 @@
 
 WORK IN PROGRESS: ES6 JS Koans
 
+Test base setup is based on David Laing's [JavaScript Koans](https://github.com/mrdavidlaing/javascript-koans), which itself it based on Edgecase's [Ruby Koans](https://github.com/edgecase/ruby_koans)
+
 ## TODO
 
 * Setup up base test runner
