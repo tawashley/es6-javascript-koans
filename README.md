@@ -18,33 +18,33 @@ WORK IN PROGRESS: ES6 JS Koans
    * Spreadh parameters
    * Arrow functions
   * Objects
-   * Initialiser shorthand
-   * Short-hand functions
-   * Computed names
-   * Duplicate literal properties
-   * Explict method definition
+    * Initialiser shorthand
+    * Short-hand functions
+    * Computed names
+    * Duplicate literal properties
+    * Explict method definition
   * Arrays
-   * .of()
-   * .from()
-   * .find()
-   * .fill()
+    * .of()
+    * .from()
+    * .find()
+    * .fill()
   * Deconstructing
-    * Object
-    * Array
+     * Object
+     * Array
   * Symbols
   * Sets
   * WeakSets
   * Maps
   * WeakMaps
   * Promises
-   * Resolving
-   * Rejecting
-   * Promise.all()
-   * Promise.race()
+    * Resolving
+    * Rejecting
+    * Promise.all()
+    * Promise.race()
   * Generators
   * Classes
-   * Constructors
-   * Extends (inheritence)
-   * super()
-   * Static functions
-   * overriding functions
+    * Constructors
+    * Extends (inheritence)
+    * super()
+    * Static functions
+    * overriding functions
