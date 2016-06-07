@@ -25,8 +25,9 @@ Test base setup is based on David Laing's [JavaScript Koans](https://github.com/
   * Data types
     * `let`
     * `const`
-  * Strings
-   * Templating
+  * ~~Strings~~
+   * ~~Templating~~
+   * ~~New methods~~
   * Functions
    * Default parameters
    * Rest parameters
