@@ -11,9 +11,23 @@ WORK IN PROGRESS: ES6 JS Koans
     * `let`
     * `const`
   * Strings
+   * Templating
   * Functions
+   * Default parameters
+   * Rest parameters
+   * Spreadh parameters
+   * Arrow functions
   * Objects
+   * Initialiser shorthand
+   * Short-hand functions
+   * Computed names
+   * Duplicate literal properties
+   * Explict method definition
   * Arrays
+   * .of()
+   * .from()
+   * .find()
+   * .fill()
   * Deconstructing
     * Object
     * Array
@@ -23,5 +37,14 @@ WORK IN PROGRESS: ES6 JS Koans
   * Maps
   * WeakMaps
   * Promises
+   * Resolving
+   * Rejecting
+   * Promise.all()
+   * Promise.race()
   * Generators
   * Classes
+   * Constructors
+   * Extends (inheritence)
+   * super()
+   * Static functions
+   * overriding functions
