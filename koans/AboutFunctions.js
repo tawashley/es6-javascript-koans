@@ -10,6 +10,8 @@ describe("About Functions", function () {
 
       expect(greeting()).toEqual(FILL_ME_IN);
       expect(greeting('get together')).toEqual(FILL_ME_IN);
+      expect(undefined).toEqual(FILL_ME_IN);
+      expect(null).toEqual(FILL_ME_IN);
 
       function getDefaultValue() {
         return 'party';
@@ -20,7 +22,6 @@ describe("About Functions", function () {
       }
 
       expect(greetingAgain()).toEqual(FILL_ME_IN);
-      expect(greetingAgain('get together')).toEqual(FILL_ME_IN);
     });
   });
 
