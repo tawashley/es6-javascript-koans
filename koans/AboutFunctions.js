@@ -31,7 +31,7 @@ describe("About Functions", function () {
 
       var setPersonName = function(firstName, lastName, ...middleNames) {
         return {
-          middleNames: middleNames;
+          middleNames: middleNames
         }
       }
 
