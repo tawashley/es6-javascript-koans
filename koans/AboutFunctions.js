@@ -39,6 +39,8 @@ describe("About Functions", function () {
 
       var arrowFn = string => string;
       expect(typeof arrowFn).toEqual(FILL_ME_IN)
+      expect(comparator instanceof Function).toEqual(FILL_ME_IN);
+
       expect(arrowFn('hello')).toEqual(FILL_ME_IN);
 
       var arrowFnTwo = (number) => number * 2;
@@ -53,6 +55,10 @@ describe("About Functions", function () {
 
       var arrowFnFive = ((number) => { 'there are ' + number + ' days in a week'; })(7);
       expect(arrowFnFive).toEqual(FILL_ME_IN);
+
+      // Concise array operations
+      // var values = [1, 6, 7, 2, 6];
+      // var sortedArray = values.sort((a, b) => a - b);
     })
 
   })
