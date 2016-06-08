@@ -28,11 +28,11 @@ Test base setup is based on David Laing's [JavaScript Koans](https://github.com/
   * ~~Strings~~
    * ~~Templating~~
    * ~~New methods~~
-  * Functions
-   * Default parameters
-   * Rest parameters
-   * Spread parameters
-   * Arrow functions
+  * ~~Functions~~
+   * ~~Default parameters~~
+   * ~~Rest parameters~~
+   * ~~Spread parameters~~
+   * ~~Arrow functions~~
   * Objects
     * Initialiser shorthand
     * Short-hand functions
