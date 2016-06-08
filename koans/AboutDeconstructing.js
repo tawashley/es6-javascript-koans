@@ -77,7 +77,71 @@ describe("About Deconstructing", function () {
     })
   });
 
-  // describe('Arrays', function() {
-  //
-  // })
+  describe('Arrays', function() {
+
+    it('should understand variable declaration usage', function() {
+      var colours = ['red', 'blue', 'green', 'purple'];
+
+      var [ firstColour, secondColour ] = colours;
+      var [,,, mysteryColour] = colours;
+
+      expect(firstColour).toEqual(FILL_ME_IN);
+      expect(secondColour).toEqual(FILL_ME_IN);
+      expect(mysteryColour).toEqual(FILL_ME_IN);
+    })
+
+    it('should understand variable assignment usage', function() {
+      var colours = ['red', 'blue', 'green', 'purple'];
+      var firstColour;
+      var secondColour;
+
+      [ firstColour, secondColour ] = colours;
+
+      expect(firstColour).toEqual(FILL_ME_IN);
+      expect(secondColour).toEqual(FILL_ME_IN);
+    })
+
+    it('should understand default values', function() {
+      var colours = ['purple'];
+
+      var [ firstColour, secondColour = 'pink' ] = colours;
+
+      expect(firstColour).toEqual(FILL_ME_IN);
+      expect(secondColour).toEqual(FILL_ME_IN);
+    });
+
+    it('should understand Rest items', function() {
+      var colours = ['red', 'blue', 'green', 'purple'];
+
+      var [firstColour, ...restOfTheColours] = colours;
+
+      expect(firstColour).toEqual(FILL_ME_IN);
+      expect(typeof restOfTheColours).toEqual(FILL_ME_IN);
+      expect(restOfTheColours.length).toEqual(FILL_ME_IN);
+      expect(restOfTheColours[1]).toEqual(FILL_ME_IN);
+    })
+
+  })
+
+  describe('Mixed types', function() {
+    var tim = {
+      age: 26,
+      height: {
+        foot: 6
+      },
+      ageRange: [25, 30],
+      features: ['beard', 'long-hair']
+    };
+
+    var {
+      age,
+      features: [, secondFeature],
+      height: { foot }
+    } = tim;
+
+    expect(age).toEqual(FILL_ME_IN);
+    expect(ageRange).toEqual(FILL_ME_IN);
+    expect(secondFeature).toEqual(FILL_ME_IN);
+    expect(foot).toEqual(FILL_ME_IN);
+  })
 });
