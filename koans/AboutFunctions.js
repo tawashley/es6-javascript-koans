@@ -42,12 +42,10 @@ describe("About Functions", function () {
       expect(author.middleNames.length).toEqual(FILL_ME_IN);
       expect(author.middleNames[0]).toEqual(FILL_ME_IN);
     })
-
-
-
   })
 
   describe('Spread Parameters', function() {
+
     var numbers = [1,2,3,4];
     var sumFourNumbers = function(one, two, three, four) {
       return one + two + three + four;
