@@ -35,16 +35,24 @@ describe("About Functions", function () {
   //
   describe('Arrow Functions', function() {
 
-    it('shound understand basic usage', function() {
+    it('shound understand syntax', function() {
 
-      var arrowFn = () => { 'hello world!'; };
+      var arrowFn = string => string;
+      expect(typeof arrowFn).toEqual(FILL_ME_IN)
+      expect(arrowFn('hello')).toEqual(FILL_ME_IN);
 
-      expect(arrowFn()).toEqual(FILL_ME_IN);
-
-      var arrowFnTwo = (number) => { number * 2; }
-
+      var arrowFnTwo = (number) => number * 2;
       expect(arrowFnTwo(4)).toEqual(FILL_ME_IN);
 
+      var arrowFnThree = () => 1337;
+      expect(arrowFnThree(4)).toEqual(FILL_ME_IN);
+
+      var arrowFnFour = () => ({  id: 1337 });
+      expect(typeof arrowFnFour()).toEqual(FILL_ME_IN);
+      expect(arrowFnFour()).toEqual(FILL_ME_IN);
+
+      var arrowFnFive = ((number) => { 'there are ' + number + ' days in a week'; })(7);
+      expect(arrowFnFive).toEqual(FILL_ME_IN);
     })
 
   })
