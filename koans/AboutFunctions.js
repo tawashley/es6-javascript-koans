@@ -25,14 +25,30 @@ describe("About Functions", function () {
     });
   });
 
-  // describe('Rest Paramaters', function() {
-  //
-  // })
-  //
+  describe('Rest Paramaters', function() {
+
+    it('should understand populate function parameters', function() {
+
+      var setPersonName = function(firstName, lastName, ...middleNames) {
+        return {
+          middleNames: middleNames;
+        }
+      }
+
+      var author = setPersonName('Arthur', 'Clarke', 'C');
+
+      //Array
+      expect(typeof author.middleNames).toEqual(FILL_ME_IN);
+      expect(author.middleNames.length).toEqual(FILL_ME_IN);
+      expect(author.middleNames[0]).toEqual(FILL_ME_IN);
+    })
+
+  })
+
   // describe('Spread Parameters', function() {
   //
   // })
-  //
+
   describe('Arrow Functions', function() {
 
     it('shound understand syntax', function() {
