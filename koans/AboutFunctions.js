@@ -25,9 +25,9 @@ describe("About Functions", function () {
     });
   });
 
-  describe('Rest Paramaters', function() {
+  describe('Rest Parameters', function() {
 
-    it('should understand populate function parameters', function() {
+    it('should understand how it populates function parameters', function() {
 
       var setPersonName = function(firstName, lastName, ...middleNames) {
         return {
@@ -43,11 +43,18 @@ describe("About Functions", function () {
       expect(author.middleNames[0]).toEqual(FILL_ME_IN);
     })
 
+
+
   })
 
-  // describe('Spread Parameters', function() {
-  //
-  // })
+  describe('Spread Parameters', function() {
+    var numbers = [1,2,3,4];
+    var sumFourNumbers = function(one, two, three, four) {
+      return one + two + three + four;
+    }
+
+    expect(sum(...numbers)).toEqual(FILL_ME_IN);
+  })
 
   describe('Arrow Functions', function() {
 
@@ -55,7 +62,7 @@ describe("About Functions", function () {
 
       var arrowFn = string => string;
       expect(typeof arrowFn).toEqual(FILL_ME_IN)
-      expect(comparator instanceof Function).toEqual(FILL_ME_IN);
+      expect(arrowFn instanceof Function).toEqual(FILL_ME_IN);
 
       expect(arrowFn('hello')).toEqual(FILL_ME_IN);
 
