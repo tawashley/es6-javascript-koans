@@ -10,12 +10,12 @@ Test base setup is based on David Laing's [JavaScript Koans](https://github.com/
 
 * Koan files
   * `AboutVariableTypes.js` - (`let`, `const`)
-  * `AboutStrings.js` - (new functions, templating)
-  * `AboutFunctions.js` - (default params, arrow functions)
+  * ~~`AboutStrings.js` - (new functions, templating)~~
+  * ~~`AboutFunctions.js` - (default params, arrow functions)~~
   * `AboutObjects.js` - (shorthand, computed name)
   * `AboutArrays.js` - (new functions)
   * `AboutPromises.js` - (resolve, reject, methods)
-  * `AboutDeconstructing.js` - (syntax, object, array, mixed, default values)
+  * ~~`AboutDeconstructing.js` - (syntax, object, array, mixed, default values)~~
   * `AboutClasses.js` - (constructors, extends, super, static functions)
   * `AboutMaps.js` - (strong, weak)
   * `AboutSets.js` - (strong, weak)
@@ -44,9 +44,11 @@ Test base setup is based on David Laing's [JavaScript Koans](https://github.com/
     * .from()
     * .find()
     * .fill()
-  * Deconstructing
-     * Object
-     * Array
+  * ~~Deconstructing~~
+     * ~~Object~~
+     * ~~Array~~
+     * ~~Default Values~~
+     * ~~Function Parameters~~
   * Symbols
   * Sets
   * WeakSets
