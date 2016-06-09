@@ -1,8 +1,8 @@
 describe("About Objects", function () {
 
-  describe("Initialiser Shorthand", function () {
+  describe("Shorthand Syntax", function () {
 
-    it('should understand usage', function() {
+    it('should understand initailiser shorthand', function() {
 
       function passThrough(one, two) {
         return {
@@ -17,11 +17,16 @@ describe("About Objects", function () {
       expect(data.one).toEqual(FILL_ME_IN);
       expect(data.two).toEqual(FILL_ME_IN);
     })
-  });
 
-  // describe('Method Shorthand', function() {
-  //
-  //   it('should understand usage', function() {
-  //   })
-  // })
+    it('should understand method shorthand', function() {
+      var utils = {
+        uppercase(string) {
+          return string.toUpperCase();
+        }
+      };
+
+      expect(typeof utils.uppercase).toEqual(FILL_ME_IN);
+      expect(typeof utils.uppercase('upper')).toEqual(FILL_ME_IN);
+    })
+  });
 });
