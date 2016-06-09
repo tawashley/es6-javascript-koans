@@ -124,24 +124,49 @@ describe("About Deconstructing", function () {
   })
 
   describe('Mixed types', function() {
-    var tim = {
-      age: 26,
-      height: {
-        foot: 6
-      },
-      ageRange: [25, 30],
-      features: ['beard', 'long-hair']
-    };
+    it('should understand how mixed types can be used', function() {
+      var tim = {
+        age: 26,
+        height: {
+          foot: 6
+        },
+        ageRange: [25, 30],
+        features: ['beard', 'long-hair']
+      };
 
-    var {
-      age,
-      features: [, secondFeature],
-      height: { foot }
-    } = tim;
+      var {
+        age,
+        features: [, secondFeature],
+        height: { foot }
+      } = tim;
 
-    expect(age).toEqual(FILL_ME_IN);
-    expect(ageRange).toEqual(FILL_ME_IN);
-    expect(secondFeature).toEqual(FILL_ME_IN);
-    expect(foot).toEqual(FILL_ME_IN);
+      expect(age).toEqual(FILL_ME_IN);
+      expect(ageRange).toEqual(FILL_ME_IN);
+      expect(secondFeature).toEqual(FILL_ME_IN);
+      expect(foot).toEqual(FILL_ME_IN);
+    })
+
+  })
+
+  describe('Function Parameters', function() {
+    it('should understand this can be used in function parameters', function() {
+      function readFile(name, { type, extension }) {
+
+        expect(type).toEqual(FILL_ME_IN);
+        expect(extension).toEqual(FILL_ME_IN);
+      }
+
+      readFile('foo', {
+        type: 'utf8',
+        extension: '.txt'
+      })
+    })
+
+    // it('should understand default parameters', function() {
+    //   function readFileWithDefaults(name, { type = 'utf8', extension = '.txt' } = {}) {
+    //
+    //   }
+    // })
+
   })
 });
