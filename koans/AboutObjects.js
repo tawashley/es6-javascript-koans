@@ -29,4 +29,25 @@ describe("About Objects", function () {
       expect(typeof utils.uppercase('upper')).toEqual(FILL_ME_IN);
     })
   });
+
+  describe('Computed Names', function() {
+    it('should understanding computed names usage', function() {
+      var car = 'ford';
+      var engine = 'Engine';
+
+      var carDetails = {
+        [car] : {
+          [car + 'Doors']: 4,
+          [car + engine]: 'v8',
+          [car + 'Model'] : 'Mustang'
+        }
+      }
+
+      expect(typeof FILL_ME_IN).toEqual('object');
+      expect(FILL_ME_IN).toEqual(4);
+      expect(FILL_ME_IN).toEqual('v8');
+      expect(FILL_ME_IN).toEqual('Mustang');
+
+    })
+  })
 });
