@@ -18,7 +18,7 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
   * ~~`AboutArrays.js`~~ - (new functions)
   * `AboutPromises.js` - (resolve, reject, methods)
   * ~~`AboutDeconstructing.js` - (syntax, object, array, mixed, default values)~~
-  * `AboutClasses.js` - (constructors, extends, super, static functions)
+  * ~~`AboutClasses.js`~~ - (constructors, extends, super, static functions)
   * `AboutMaps.js` - (strong, weak)
   * `AboutSets.js` - (strong, weak)
   * `AboutGenerators.js` - (syntax, usage)
@@ -61,9 +61,10 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
     * Promise.all()
     * Promise.race()
   * Generators
-  * Classes
-    * Constructors
-    * Extends (inheritence)
-    * super()
-    * Static functions
-    * overriding functions
+  * ~~Classes~~
+    * ~~Constructors~~
+    * ~~Getters and Setters~~
+    * ~~Extends (inheritence)~~
+    * ~~super()~~
+    * ~~Static functions~~
+    * ~~overriding functions~~

@@ -18,11 +18,11 @@ describe("About Classes", function () {
 
       let car = new Car('Ford', 'Mustang');
 
-      // expect(car instanceof Car).toEqual(FILL_ME_IN);
-      // expect(car instanceof Object).toEqual(FILL_ME_IN);
-      //
-      // expect(typeof car.getFullName).toEqual(FILL_ME_IN);
-      // expect(car.getFullName()).toEqual(FILL_ME_IN);
+      expect(car instanceof Car).toEqual(FILL_ME_IN);
+      expect(car instanceof Object).toEqual(FILL_ME_IN);
+
+      expect(typeof car.getFullName).toEqual(FILL_ME_IN);
+      expect(car.getFullName()).toEqual(FILL_ME_IN);
 
       let Bike = class {
         constructor(make, model) {
@@ -37,8 +37,8 @@ describe("About Classes", function () {
 
       let bike = new Bike('Ducati', 'Monster');
 
-      // expect(typeof bike.getFullName).toEqual(FILL_ME_IN);
-      // expect(bike.getFullName()).toEqual(FILL_ME_IN);
+      expect(typeof bike.getFullName).toEqual(FILL_ME_IN);
+      expect(bike.getFullName()).toEqual(FILL_ME_IN);
 
     });
   });
@@ -62,14 +62,14 @@ describe("About Classes", function () {
           }
       }, 'Ford', 'Mustang');
 
-      // expect(car.getFullName()).toEqual(FILL_ME_IN);
+      expect(car.getFullName()).toEqual(FILL_ME_IN);
     })
   })
 
   describe('Getters and Setters', function() {
 
     it('should understand syntax for getters and setters', function() {
-      class Car2 {
+      class Car {
           constructor() {
             this._make = undefined;
           }
@@ -86,15 +86,100 @@ describe("About Classes", function () {
           }
       }
 
-      var car = new Car2();
+      var car = new Car();
 
-      // expect(car.make).toEqual(FILL_ME_IN);
+      expect(car.make).toEqual(FILL_ME_IN);
 
       car.make = 'Ford';
-      // expect(car.make).toEqual(FILL_ME_IN);
+      expect(car.make).toEqual(FILL_ME_IN);
 
       car.make = 'Bugatti';
-      // expect(car.make).toEqual(FILL_ME_IN);
+      expect(car.make).toEqual(FILL_ME_IN);
+    })
+  })
+
+  describe('Static Methods', function() {
+    it('should understand syntax for static methods', function() {
+
+      class Car {
+
+        static getNumberOfWheels() {
+          return 4
+        }
+      }
+
+      expect(typeof Car.getNumberOfWheels).toEqual(FILL_ME_IN);
+      expect(Car.getNumberOfWheels()).toEqual(FILL_ME_IN);
+    })
+  })
+
+  describe('Inheritence', function() {
+
+    it('should understand usage of super() function', function() {
+      class Car {
+          constructor(make, model) {
+            this.make = make;
+            this.model = model;
+          }
+
+          getFullName() {
+            return this.make + ' ' + this.model;
+          }
+      }
+
+      class SuperCar extends Car {
+        constructor(make, model) {
+          super(make, model);
+        }
+      }
+
+      var superCar = new SuperCar('McLaren', 'P1');
+
+      expect(superCar.getFullName()).toEqual(FILL_ME_IN);
+    })
+
+    it('should understand overriding/shadowing inherited properties', function() {
+      class Car {
+          constructor(make, model) {
+            this.make = make;
+            this.model = model;
+          }
+
+          getFullName() {
+            return this.make + ' ' + this.model;
+          }
+
+          static hasSlickTyres() {
+            return false;
+          }
+
+          static canFly() {
+            return false;
+          }
+      }
+
+      class SuperCar extends Car {
+        constructor(make, model) {
+          super(make, model);
+        }
+
+        getFullName() {
+          var name = super.getFullName();
+
+          return 'Car Name: ' + name;
+        }
+
+        static hasSlickTyres() {
+          return true;
+        }
+      }
+
+      expect(SuperCar.hasSlickTyres()).toEqual(FILL_ME_IN);
+      expect(SuperCar.canFly()).toEqual(FILL_ME_IN);
+
+      var superCar = new SuperCar('McLaren', 'P1');
+
+      expect(superCar.getFullName()).toEqual(FILL_ME_IN);
     })
   })
 
