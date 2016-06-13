@@ -39,7 +39,7 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
     * ~~Initialiser shorthand~~
     * ~~Short-hand functions~~
     * ~~Computed names~~
-    * Duplicate literal properties
+    * ~~Duplicate literal properties~~
     * Explict method definition
   * Arrays
     * .of()
