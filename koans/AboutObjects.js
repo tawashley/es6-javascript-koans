@@ -31,7 +31,7 @@ describe("About Objects", function () {
   });
 
   describe('Computed Names', function() {
-    it('should understanding computed names usage', function() {
+    it('should understand computed names usage', function() {
       var car = 'ford';
       var engine = 'Engine';
 
@@ -49,5 +49,19 @@ describe("About Objects", function () {
       expect(FILL_ME_IN).toEqual('Mustang');
 
     })
+  })
+
+  describe('Duplicate Literal Properties', function() {
+
+    it('should understand have duplicate keys are handled', function() {
+      var newJsStandard = {
+        name: 'harmony',
+        name: 'es6',
+        name: 'es2015'
+      };
+
+      expect(newJsStandard.name).toEqual(FILL_ME_IN);
+    })
+
   })
 });
