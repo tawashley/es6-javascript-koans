@@ -36,9 +36,9 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
    * ~~Spread parameters~~
    * ~~Arrow functions~~
   * Objects
-    * Initialiser shorthand
-    * Short-hand functions
-    * Computed names
+    * ~~Initialiser shorthand~~
+    * ~~Short-hand functions~~
+    * ~~Computed names~~
     * Duplicate literal properties
     * Explict method definition
   * Arrays
