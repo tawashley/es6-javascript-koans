@@ -14,8 +14,8 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
   * `AboutVariableTypes.js` - (`let`, `const`)
   * ~~`AboutStrings.js` - (new functions, templating)~~
   * ~~`AboutFunctions.js` - (default params, arrow functions)~~
-  * `AboutObjects.js` - (shorthand, computed name)
-  * `AboutArrays.js` - (new functions)
+  * ~~`AboutObjects.js`~~ - (shorthand, computed name)
+  * ~~`AboutArrays.js`~~ - (new functions)
   * `AboutPromises.js` - (resolve, reject, methods)
   * ~~`AboutDeconstructing.js` - (syntax, object, array, mixed, default values)~~
   * `AboutClasses.js` - (constructors, extends, super, static functions)
@@ -35,7 +35,7 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
    * ~~Rest parameters~~
    * ~~Spread parameters~~
    * ~~Arrow functions~~
-  * Objects
+  * ~~Objects~~
     * ~~Initialiser shorthand~~
     * ~~Short-hand functions~~
     * ~~Computed names~~
