@@ -40,11 +40,11 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
     * ~~Short-hand functions~~
     * ~~Computed names~~
     * ~~Duplicate literal properties~~
-  * Arrays
-    * .of()
-    * .from()
-    * .find()
-    * .fill()
+  * ~~Arrays~~
+    * ~~.of()~~
+    * ~~.from()~~
+    * ~~.find()~~
+    * ~~.fill()~~
   * ~~Deconstructing~~
      * ~~Object~~
      * ~~Array~~
