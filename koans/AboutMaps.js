@@ -16,5 +16,15 @@ describe("About Maps", function () {
       expect(trooper.get('hits target')()).toEqual(FILL_ME_IN);
     });
 
+    it("should understand they are mutable values", function() {
+      var trooper = new Map();
+
+      trooper.set('name', 'Stormtrooper');
+      expect(trooper.get('name')).toEqual(FILL_ME_IN);
+
+      trooper.set('name', 'Iron Maiden');
+      expect(trooper.get('name')).toEqual(FILL_ME_IN);
+    })
+    
   });
 });
