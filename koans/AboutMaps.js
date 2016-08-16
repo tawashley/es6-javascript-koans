@@ -25,6 +25,10 @@ describe("About Maps", function () {
       trooper.set('name', 'Iron Maiden');
       expect(trooper.get('name')).toEqual(FILL_ME_IN);
     })
-    
+
+    it("should understand they can contain any value", function() {
+      
+    })
+
   });
 });
