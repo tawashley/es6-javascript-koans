@@ -45,5 +45,34 @@ describe("About Maps", function () {
       expect(values.get(FILL_ME_IN)).toEqual(12);
     })
 
+    // it("should understand entries can be removed", function() {
+    //
+    // })
+    //
+    // it("should understand how typeof handles Maps", function() {
+    //
+    // })
+
   });
+
+  // describe("Methods", function() {
+  //
+  //   it("should understand the 'entries' method", function() {
+  //
+  //   })
+  //
+  //   it("should understand 'forEach' method", function() {
+  //
+  //   })
+  //
+  //   it("should understand 'has' method", function() {
+  //
+  //   })
+  //
+  //   it("should understand 'keys' method", function() {
+  //
+  //   })
+  //
+  // })
+
 });
