@@ -27,7 +27,22 @@ describe("About Maps", function () {
     })
 
     it("should understand they can contain any value", function() {
-      
+      var values = new Map();
+
+      values.set('string', 'this is a string');
+      values.set('array', ['a', 'b', 'c']);
+      values.set('object', { a: 1, b: 2 });
+      values.set('function', function(number) { return number * 2 });
+
+      expect(values.get(FILL_ME_IN)).toEqual('this is a string');
+      expect(values.get('array')).toEqual(FILL_ME_IN);
+
+      expect(values.get(FILL_ME_IN)).toEqual('');
+      expect(typeof values.get('object')).toEqual(FILL_ME_IN);
+
+      expect(values.get(FILL_ME_IN)).toEqual('');
+      expect(typeof values.get('function')).toEqual(FILL_ME_IN);
+      expect(values.get(FILL_ME_IN)).toEqual(12);
     })
 
   });
