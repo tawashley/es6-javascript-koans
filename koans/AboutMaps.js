@@ -45,13 +45,37 @@ describe("About Maps", function () {
       expect(values.get(FILL_ME_IN)).toEqual(12);
     })
 
-    // it("should understand entries can be removed", function() {
-    //
-    // })
-    //
-    // it("should understand how typeof handles Maps", function() {
-    //
-    // })
+    it("should understand can check if entries exist", function() {
+      var colours = new Map();
+
+      colours.set('red', '#f00');
+      colours.set('yellow', '#ff0');
+
+      expect(colours.has('red')).toEqual(FILL_ME_IN);
+      expect(colours.has('green')).toEqual(FILL_ME_IN);
+    })
+
+    it("should understand entries can be removed", function() {
+      var carDetails = new Map();
+
+      carDetails.set('make', 'McLaren');
+      carDetails.set('engine', 'Honda');
+      carDetails.set('doors', 4);
+
+      expect(carDetails.size).toEqual(FILL_ME_IN);
+
+      carDetails.delete('doors');
+
+      expect(carDetails.size).toEqual(FILL_ME_IN);
+      expect(carDetails.has('doors')).toEqual(FILL_ME_IN);
+    })
+
+    //https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/typeof
+    it("should understand typeof returns object", function() {
+      var map = new Map();
+
+      expect(typeof map).toEqual(FILL_ME_IN);
+    })
 
   });
 
@@ -65,9 +89,6 @@ describe("About Maps", function () {
   //
   //   })
   //
-  //   it("should understand 'has' method", function() {
-  //
-  //   })
   //
   //   it("should understand 'keys' method", function() {
   //
