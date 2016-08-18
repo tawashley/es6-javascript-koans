@@ -19,7 +19,7 @@ A good ES6 reference is [Understanding ES6](https://leanpub.com/understandinges6
   * `AboutPromises.js` - (resolve, reject, methods)
   * ~~`AboutDeconstructing.js` - (syntax, object, array, mixed, default values)~~
   * ~~`AboutClasses.js`~~ - (constructors, extends, super, static functions)
-  * `AboutMaps.js` - (strong, weak)
+  * `AboutMaps.js` - (~~strong~~, weak)
   * `AboutSets.js` - (strong, weak)
   * `AboutGenerators.js` - (syntax, usage)
 
