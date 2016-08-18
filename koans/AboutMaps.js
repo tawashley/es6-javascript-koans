@@ -79,21 +79,42 @@ describe("About Maps", function () {
 
   });
 
-  // describe("Methods", function() {
-  //
-  //   it("should understand the 'entries' method", function() {
-  //
-  //   })
-  //
-  //   it("should understand 'forEach' method", function() {
-  //
-  //   })
-  //
-  //
-  //   it("should understand 'keys' method", function() {
-  //
-  //   })
-  //
-  // })
+  describe("Methods", function() {
+
+    it("should understand 'forEach' method", function() {
+        var parts = new Map();
+        var sentence = '';
+
+        parts.set('Bad ', 'boys ');
+        parts.set('bad ', 'boys ');
+        parts.set('what ', 'you ');
+        parts.set('gonna ', 'do.');
+        parts.set(' What', ' you ');
+        parts.set('gonna do', ' ');
+        parts.set('when ', 'they ');
+        parts.set('come ', 'for ');
+        parts.set('you', '.');
+
+        parts.forEach(function (value, key, map) {
+          sentence += key;
+          sentence += value;
+          map.delete(key);
+        })
+
+        expect(parts.size).toEqual(FILL_ME_IN);
+        expect(sentence).toEqual(FILL_ME_IN);
+    })
+
+    //Following use generator. Best to do generator koan before this?
+
+    //   it("should understand the 'entries' method", function() {
+    //
+    //   })
+
+    // it("should understand 'keys' method", function() {
+    //
+    // })
+
+  })
 
 });
