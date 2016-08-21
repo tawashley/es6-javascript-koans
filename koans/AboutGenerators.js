@@ -1,6 +1,6 @@
 describe("About Generators", function () {
 
-  describe("Basic usage", function () {
+  describe("Usage", function () {
 
     it("should understand syntax", function () {
 
@@ -45,6 +45,53 @@ describe("About Generators", function () {
       expect(generator.next().value).toEqual(FILL_ME_IN);
       //fifth
       expect(generator.next().value).toEqual(FILL_ME_IN);
+    })
+
+    it('should understand how generators can be used as iterators', function() {
+      var collection = [];
+      var iterator;
+
+      function* generator() {
+        yield 'a';
+        yield 'b';
+        yield 'c';
+        yield 'd';
+      }
+
+      iterator = generator();
+
+      for (letter of iterator) {
+        collection.push(letter);
+      }
+
+      expect(collection.join('')).toEqual(FILL_ME_IN);
+      expect(iterator.next().done).toEqual(FILL_ME_IN);
+    })
+
+    it('should understand custom iterables can be created', function() {
+      var lordOfRingFilms  = {
+        names: [
+          'The Fellowship of the Ring',
+          'The Two Towers',
+          'The Return of the king'
+        ],
+        nameDescriptions: [],
+        *[Symbol.iterator]() {
+          for (var i = 0; i < this.names.length; i++) {
+            yield 'Film ' + (i+1) + ' -> Lord of the rings: ' + this.names[i];
+          }
+        }
+      }
+
+      for (description of lordOfRingFilms) {
+        lordOfRingFilms.nameDescriptions.push(description);
+      }
+
+      var descriptions = lordOfRingFilms.nameDescriptions;
+
+      expect(descriptions.length).toEqual(FILL_ME_IN);
+      expect(descriptions[0]).toEqual(FILL_ME_IN);
+      expect(descriptions[2]).toEqual(FILL_ME_IN);
     })
   });
 });
