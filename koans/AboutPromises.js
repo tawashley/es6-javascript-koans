@@ -10,8 +10,8 @@ describe("About Promises", function () {
         })
       }
 
-      // expect(promise() instanceof Promise).toEqual(FILL_ME_IN);
-      // expect(typeof promise()).toEqual(FILL_ME_IN);
+      expect(promise() instanceof Promise).toEqual(FILL_ME_IN);
+      expect(typeof promise()).toEqual(FILL_ME_IN);
     });
 
     it('should understand a Promise can be fulfilled / resolved', function(done) {
