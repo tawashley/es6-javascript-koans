@@ -19,10 +19,32 @@ describe("About Generators", function () {
 
       var completedGenerator = generator.next()
 
-      expect(completedGenerator.value).toEqual(FILL_ME_IN);
+      //Values of a finished generator
       expect(completedGenerator.done).toEqual(FILL_ME_IN);
-
-      debugger;
+      expect(completedGenerator.value).toEqual(FILL_ME_IN);
     });
+
+    it('should understand use of `yield`', function() {
+      function* multiplyNumber(number) {
+        yield number*1;
+        yield number*2;
+        yield number*3;
+        yield number*4;
+        yield number*5;
+      }
+
+      var generator = multiplyNumber(10);
+
+      //first
+      expect(generator.next().value).toEqual(FILL_ME_IN);
+      //second
+      expect(generator.next().value).toEqual(FILL_ME_IN);
+      //third
+      expect(generator.next().value).toEqual(FILL_ME_IN);
+      //fourth
+      expect(generator.next().value).toEqual(FILL_ME_IN);
+      //fifth
+      expect(generator.next().value).toEqual(FILL_ME_IN);
+    })
   });
 });
