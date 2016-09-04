@@ -136,6 +136,8 @@ describe("About Classes", function () {
 
       var superCar = new SuperCar('McLaren', 'P1');
 
+      expect(superCar instanceof Car).toEqual(FILL_ME_IN);
+      expect(typeof superCar.getFullName).toEqual(FILL_ME_IN);
       expect(superCar.getFullName()).toEqual(FILL_ME_IN);
     })
 
