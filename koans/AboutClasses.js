@@ -110,6 +110,7 @@ describe("About Classes", function () {
 
       expect(typeof Car.getNumberOfWheels).toEqual(FILL_ME_IN);
       expect(Car.getNumberOfWheels()).toEqual(FILL_ME_IN);
+      expect(typeof new Car().getNumberOfWheels).toEqual(FILL_ME_IN);
     })
   })
 
